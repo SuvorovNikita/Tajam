@@ -1,0 +1,31 @@
+.expertise {
+    padding: 79px 0;
+    .inner {
+        text-align: center;
+  
+    }
+    .subtitle {
+        margin-bottom: 16px;
+    }
+    .item {
+        margin-top: 79px;
+        text-align: center;     
+    }
+    .icon {
+        margin-bottom: 35px;
+        overflow: hidden;
+        height: 50px;
+    }
+    .prof {
+        margin-bottom: 25px;
+        color: $g-color-alt;
+        font-family: $g-font-family-header;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .text-alt {
+        width: 224px;
+        margin: 0 auto;
+    }
+}

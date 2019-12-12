@@ -1,0 +1,43 @@
+.about {
+    padding: 70px 0;
+
+    .inner-item {
+        text-align: center;
+    }
+
+    .inner {
+        padding-left: 18px;
+
+        @include media-breakpoint-down(xs) {
+            padding-left: 0;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 28px;
+
+        @include media-breakpoint-down(xs) {
+            margin-top: 28px;
+            text-align: center;
+        }
+    }
+
+    .text-alt {
+        margin-bottom: 31px;
+
+        @include media-breakpoint-down(xs) {
+            margin-top: 28px;
+            text-align: center;
+        }
+    }
+
+    .section-button {
+        padding-top: 14px;
+        text-align: center;
+
+        @include media-breakpoint-down(xs) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

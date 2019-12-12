@@ -1,0 +1,198 @@
+.c-header {
+    .header-bg {
+        padding: 21px 0 0;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 750px;
+
+        .inner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 750px;
+            width: 100%;
+            z-index: -1;
+            background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+            opacity: 0.85;
+        }
+
+        .nav {
+        
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .img {
+            margin-right: 11px;
+        }
+
+        .logo {
+            display: inline-block;
+            background-image: linear-gradient(to top, #00e0d0 0%, #4aa3cc 100%);
+            color: #fff;
+            font-family: $g-font-family-header;
+            font-size: 1.8rem;
+            font-weight: 100;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            @include media-breakpoint-down(xs) {
+                display: none;
+                &.show {
+                    display: flex;
+                    position: absolute;
+                    left: 30px;
+                    top: 100px;
+              
+                }
+
+            }
+        }
+
+        .menu-link {
+            margin-right: 30px;
+            color: $g-color-primary;
+            font-family: $g-font-family-header;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: all .2s linear;
+
+            &:hover {
+                color: $g-color-hover;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+            @include media-breakpoint-down(xs) {
+                width: 100%;
+                margin-right: 0;
+          
+            }
+
+
+        }
+
+        .mobile-menu {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: none;
+            z-index: 4;
+            width: 25px;
+            height: 25px;
+            display: none;
+
+            @include media-breakpoint-down(xs) {
+                display: block;
+            }
+        }
+
+        .mob-menu {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+
+        .title {
+            text-align: center;
+            margin-top: 183px;
+            position: relative;
+
+            @include media-breakpoint-down(xs) {
+                margin-top: 163px;
+            }
+
+            &:after {
+                position: absolute;
+                display: block;
+                left: 0;
+                right: 0;
+                content: '';
+                width: 50px;
+                height: 1px;
+                background-color: $g-color-hover;
+                margin: 21px auto 0;
+            }
+        }
+
+        .text {
+            text-align: center;
+            margin: 52px auto 0;
+            width: 650px;
+
+            @include media-breakpoint-down(xs) {
+                width: 290px;
+            }
+        }
+
+        .section-button {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 127px;
+
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    // slider 
+    .slider {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider-item {
+        overflow: hidden;
+    }
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        text-decoration: none;
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $g-color-border;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .slick-active button {
+        width: 10px;
+        height: 10px;
+        background: none;
+        border: none;
+        background-color: $g-color-hover;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+}

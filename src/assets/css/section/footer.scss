@@ -1,0 +1,166 @@
+.c-footer {
+    position: relative;
+    .bg-footer {
+        z-index: 1;
+        overflow: hidden;
+        display: block;
+        padding: 72px 0;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        @include media-breakpoint-down(xs) {
+            padding: 35px 0;
+        }
+    }
+    .bg-inner {
+        z-index: -1;
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 433px;
+        width: 100%;
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity: 0.85;
+        @include media-breakpoint-down(xs) {
+            height: 870px;
+            max-width: 100%;
+        }
+    }
+    .logo {
+        margin-bottom: 37px;
+    }
+    .text-alt {
+        width: 238px;
+    }
+    .adres-name {
+        margin-top: 18px;
+        margin-bottom: 55px;
+        color: $g-color-primary;
+        font-family: $g-font-family-header;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 37px;
+        }
+    }
+    .adres,
+    .tel {
+        transition: all .2s linear;
+        &:hover {
+            color: $g-color-hover;
+        }
+    }
+    .tel {
+        margin-top: 24px;
+    }
+    .icon {
+        margin-right: 12px;
+    }
+    .form-field {
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+        input[type="text"] {
+            opacity: 0.75;
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1;
+        }
+        input {
+            padding-left: 16px;
+            width: 211px;
+            height: 45px;
+            border: 1px solid #ffffff;
+            opacity: 0.5;
+            background: none;
+            &::placeholder {
+                opacity: 0.75;
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1;
+            }
+        }
+        .paper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            margin-left: 10px;
+            width: 70px;
+            height: 45px;
+            border: 1px solid #ffffff;
+            background-color: #ffffff;
+            opacity: 0.5;
+            transition: all .2s linear;
+            &:hover {
+                opacity: 1;
+            }
+            @include media-breakpoint-down(xs) {
+                margin: 0;
+            }
+        }
+    }
+    .section-social {
+        display: flex;
+       
+    }
+    .social {
+        margin-right: 10px;
+    }
+    .nav {
+        margin-top: 60px;
+        z-index: 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media-breakpoint-down(xs) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .nav-link {
+        margin-right: 30px;
+        color: $g-color-primary;
+        font-family: $g-font-family-header;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        transition: all .2s linear;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $g-color-hover;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    .copyring {
+        margin-right: 53px;
+        color: $g-color-primary;
+        font-family: $g-font-family-header;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        @include media-breakpoint-down(xs) {
+            font-size: 12px;
+            text-align: center;
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+    .contact {
+        padding: 72px 0;
+        @include media-breakpoint-down(xs) {
+            padding: 0 0;
+        }
+        .subtitle {
+            margin-bottom: 35px;
+            @include media-breakpoint-down(xs) {
+                margin-top: 35px;
+                text-align: center;
+            }
+        }
+        .form-field {
+            input,
+            textarea {
+                width: 100%;
+                display: block;
+                position: relative;
+                appearance: none;
+                padding: 0 21px;
+                margin-bottom: 23px;
+            }
+            textarea {
+                margin-bottom: 0;
+            }
+            input {
+                max-width: 460px;
+                height: 45px;
+                border: 1px solid $g-color-alt;
+                opacity: 0.5;
+            }
+            textarea {
+                resize: none;
+                padding-top: 22px;
+                max-width: 460px;
+                height: 200px;
+                border: 1px solid $g-color-alt;
+                opacity: 0.5;
+            }
+        }
+        .section-button {
+            margin-top: 36px;
+            @include media-breakpoint-down(xs) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .item {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            margin-right: 80px;
+            margin-bottom: 47px;
+            @include media-breakpoint-down(xs) {
+                display: block;
+                margin: 47px auto;
+            }
+        }
+        .logo.gucci {
+            margin-left: 7px;
+            @include media-breakpoint-down(xs) {
+                display: block;
+                margin: 47px auto;
+            }
+        }
+        .logo.nike {
+            margin-left: 43px;
+            @include media-breakpoint-down(xs) {
+                display: block;
+                margin: 47px auto;
+            }
+        }
+        .logo.puma {
+            margin-left: 71px;
+            @include media-breakpoint-down(xs) {
+                display: block;
+                margin: 47px auto;
+            }
+        }
+        .logo.bong {
+            margin-left: 51px;
+            @include media-breakpoint-down(xs) {
+                display: block;
+                margin: 47px auto;
+            }
+        }
+    }

@@ -1,0 +1,58 @@
+.c-button {
+    user-select: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &-style-d {
+        padding-top: 13px;
+        display: block;
+        margin: 0 auto;
+        color: $g-color-hover;
+        font-family: $g-font-family-btn;
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1;
+        width: 120px;
+        height: 40px;
+        transition: padding-top .2s linear;
+        &:hover {
+            padding-top: 15px;
+            color: $g-color-hover;
+        }
+    }
+}
+
+.size {
+    width: 140px;
+    height: 40px;
+}
+
+.margin {
+    margin: 0;
+}
+
+.border {
+    border: 1px solid $g-color-hover;
+    background: none;
+    text-align: center;
+}
+
+.social {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    &:hover {
+        border: 2px solid $g-color-hover;
+    }
+}
